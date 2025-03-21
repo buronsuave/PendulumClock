@@ -124,8 +124,8 @@ public class TimeGear extends JComponent {
             // Draw arrow
             g2d.translate(centerX, centerY);
             g2d.rotate(angle);
-            g2d.setColor(Color.decode("#ea8760"));
-            g2d.fillRect(-2,-outerRadius/2, 4, outerRadius/2);
+            g2d.setColor(Color.BLACK);
+            g2d.fillRect(-4,-outerRadius/2, 8, outerRadius/2);
             int[] xPoints = {-10, 10, 0}; // Teeth width
             int[] yPoints = {-outerRadius/2, -outerRadius/2, -outerRadius/2-15};
             int nPoints = 3;

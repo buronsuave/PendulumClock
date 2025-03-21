@@ -7,7 +7,6 @@ import java.awt.*;
 import java.time.LocalTime;
 import java.io.File;
 import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
 
 public class PendulumClock extends JFrame {
     private final Pendulum pendulum;
@@ -120,19 +119,19 @@ public class PendulumClock extends JFrame {
 
         // Create the seconds gear
         secondsGear = new TimeGear(407, 345, 30,
-                10, 100, 90, 6, 20, 25,
+                10, 100, 90, 3, 20, 25,
                 Color.decode("#879281"), Color.decode("#bab78c"), true);
         secondsGear.setBounds(0, 0, 1000, 1000);
 
         // Create 1st aux gear
         aux1Gear = new TimeGear(407, 610, 100,
-                10, 230, 220, 6, 20, 25,
+                10, 230, 220, 8, 20, 25,
                 Color.decode("#767b8d"), Color.decode("#a7adb2"), false);
         aux1Gear.setBounds(0, 0, 1000, 1000);
 
         // Create minutes gear
         minutesGear = new TimeGear(590, 610, 60,
-                10, 150, 140, 6, 20, 25,
+                10, 150, 140, 4, 20, 25,
                 Color.decode("#b74a23"), Color.decode("#d9633b"), true);
         minutesGear.setBounds(0, 0, 1000, 1000);
 
@@ -143,8 +142,8 @@ public class PendulumClock extends JFrame {
         aux2Gear.setBounds(0, 0, 1000, 1000);
 
         // Create the hours gear
-        hoursGear = new TimeGear(765, 450, 30,
-                10, 100, 90, 6, 20, 25,
+        hoursGear = new TimeGear(760, 452, 30,
+                10, 100, 90, 5, 20, 25,
                 Color.decode("#003b6d"), Color.decode("#6699cc"), true);
         hoursGear.setBounds(0, 0, 1000, 1000);
 
